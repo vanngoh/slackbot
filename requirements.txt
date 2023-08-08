@@ -1,0 +1,4 @@
+Flask==2.2.0
+urllib3==1.26.12
+slack-bolt==1.18.0
+# openai = "^0.27.0"

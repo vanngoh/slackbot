@@ -1,0 +1,12 @@
+#!/bin/bash
+
+CURR_PWD=$(pwd)
+source ./venv/bin/activate
+echo "Activating venv: $CURR_PWD"
+
+pip install -r requirements.txt
+
+export SLACK_APP_CLIENT_ID=
+export SLACK_APP_CLIENT_SECRET=
+export SLACK_SIGNING_SECRET=
+export SLACK_APP_TOKEN=
