@@ -8,18 +8,9 @@ Initial the python `venv` with the following command:
 $ python3 -m venv venv
 ```
 
-## Step 2: Activate the Python Virtual Environment
+## Step 2: Set up the required variables for Slack API
 
-Activate the `venv`
-
-```
-$ . ./activate
-(venv)$
-```
-
-## Step 3: Set up the required variables for Slack API
-
-Get the following variables from Slack and set them as environment variables:
+Get the following variables from Slack and set them as environment variables in `activate` script:
 
 - SLACK_APP_CLIENT_ID
 - SLACK_APP_CLIENT_SECRET
@@ -27,6 +18,15 @@ Get the following variables from Slack and set them as environment variables:
 - SLACK_APP_TOKEN
 
 > [Pending] Add the variables into GitHub Action Secret for CI/CD to build the docker image
+
+## Step 3: Activate the Python Virtual Environment
+
+Activate the `venv`
+
+```
+$ . ./activate
+(venv)$
+```
 
 ## Step 4: Run the server
 
